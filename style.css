@@ -1,0 +1,150 @@
+:root {
+    --bg-color: #1a1a2e;
+    --primary-color: #0000FF;
+    --text-color: #f5f5f5;
+    --accent-color: #00c3ff;
+    --card-bg: #222240;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+
+  nav {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+
+  nav ul li a:hover {
+    color: var(--accent-color);
+  }
+
+  section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+
+  section:nth-child(even) {
+    background-color: var(--card-bg);
+  }
+
+  h1, h2, h3 {
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+  }
+
+  img {
+    max-width: 270px;
+    border-radius: 80%;
+    margin: 1rem auto;
+    box-shadow: 0 0 20px rgba(0, 195, 255, 0.3);
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .gallery-item {
+    text-align: center;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }
+
+  .gallery-item p {
+    margin-top: 0.5rem;
+    color: var(--text-color);
+    font-size: 0.9rem;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    text-align: left;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  li {
+    margin-bottom: 0.7rem;
+  }
+
+  .card {
+    background: var(--card-bg);
+    margin: 1rem auto;
+    padding: 1.5rem;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 195, 255, 0.2);
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    max-width: 400px;
+    margin: 0.5rem auto;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: var(--text-color);
+  }
+
+  form textarea {
+    resize: vertical;
+  }
+
+  button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: var(--accent-color);
+  }

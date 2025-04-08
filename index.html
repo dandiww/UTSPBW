@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Sederhana dandiw</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#prestasi">Prestasi</a></li>
+      <li><a href="#pengalaman">Pengalaman</a></li>
+      <li><a href="#kontak">kontak</a></li>
+    </ul>
+  </nav>
+
+  <section id="beranda">
+    <div class="card">
+      <h1>Halo, Saya Dandi Permana</h1>
+      <img src="/porto.png" alt="Foto Profil" />
+      <p>Saya adalah Mahasiswa Sistem Informasi dan juga Ketua Himpunan Mahasiswa Sistem Informasi Universitas Singaperbangsa Karawang Periode 2025. Mari lihat tentang saya!</p>
+    </div>
+  </section>
+
+  <section id="prestasi">
+    <div class="card">
+      <h2>Prestasi di Organisasi</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="/tiyd.jpg" alt="Portfolio 1">
+          <p>Peraih penghargaan Perayaan Ulang Tahun Bagi Pengurus Himsika 2024</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/mos.jpg" alt="Portfolio 2">
+          <p>Peraih penghargaan pengurus terbaik "The Originator" Bagi Pengurus Himsika 2024</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/tim best.jpg" alt="Portfolio 3">
+          <p>Peraih penghargaan Divisi Terbaik "Ultimate Team" Bagi Pengurus Himsika 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pengalaman">
+    <div class="card">
+      <h2>Pengalaman di Organisasi</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="/kahim.JPG" alt="Prestasi 1">
+          <p>Dilantik sebagai Ketua Himpunan Tahun 2024/2025</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/mc2.JPG" alt="Prestasi 2">
+          <p>Ketua Pelaksana Study Banding Himsika x HMIF ITB</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/mc1.JPG" alt="Prestasi 3">
+          <p>Master Of Ceremony Upgrading Himsika</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontak">
+    <div class="card">
+      <h2>Kontak Saya</h2>
+      <p>Email: dandipermanaa06@gmail.com</p>
+      <p>Telepon: 0812-3456-7890</p>
+      <p>Alamat: Karawang, Jawa barat, Indonesia</p>
+
+      <form id="contactForm">
+        <input type="text" placeholder="Nama" required /><br />
+        <input type="email" placeholder="Email" required /><br />
+        <textarea placeholder="Pesan" rows="4" required></textarea><br />
+        <button type="submit">Kirim</button>
+      </form>
+
+      <button onclick="scrollToBeranda()">Kembali ke Beranda</button>
+    </div>
+  </section>
+</body>
+
+</html>
