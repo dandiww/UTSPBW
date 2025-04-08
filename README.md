@@ -1,0 +1,1 @@
+Website ini memperlihatkan portofolio Organisasi Dandi Permana dalam Lingkungan Universitas Singaperbangsa Karawang, di Website ini juga menampilkan prestasi dan pengalaman organisasi dari Dandi Permana.
